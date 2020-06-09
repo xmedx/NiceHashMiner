@@ -11,7 +11,9 @@
         <viewModels:MainVM />
     </UserControl.DataContext>
 
-    <Grid Background="AliceBlue"  Width="Auto" Height="Auto">
-        <Label Content="Under construction" />
-    </Grid>
+    <Border Grid.Row="1" BorderBrush="{DynamicResource BorderColor}" BorderThickness="1" Margin="40,10,40,10">
+        <Grid>
+
+        </Grid>
+    </Border>
 </UserControl>
