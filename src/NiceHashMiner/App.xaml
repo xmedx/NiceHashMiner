@@ -25,7 +25,7 @@
 
             <!--#region Dynamic Theme Properties-->
             <DrawingBrush x:Key="NHMLogo" Drawing="{DynamicResource NHMLogoLight}" />
-
+            <DrawingBrush x:Key="NHMBigLogo" Drawing="{DynamicResource NHMLogoBigLight}" />
 
             <DrawingBrush x:Key="LoginCircle" Drawing="{DynamicResource LoginCircleLogoLight}" />
             <!--#endregion Dynamic Theme Properties-->

@@ -359,6 +359,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Xaml\Icons\NHMLogoBigLight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Xaml\Icons\NHMLogoDark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
