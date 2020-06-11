@@ -33,6 +33,7 @@
         <Setter Property="FontFamily" Value="{StaticResource Ubuntu-Medium}"/>
         <Setter Property="FontSize" Value="14" />
         <Setter Property="Foreground" Value="{StaticResource Gray2ColorBrush}" />
+        <Setter Property="Cursor" Value="Hand" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Foreground" Value="{StaticResource PrimaryColorBrush}" />

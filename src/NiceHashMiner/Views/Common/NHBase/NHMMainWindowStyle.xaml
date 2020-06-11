@@ -29,6 +29,7 @@
         <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
         <Setter Property="FontSize" Value="13.333" />
         <Setter Property="Foreground" Value="#CECDCD" />
+        <Setter Property="Cursor" Value="Hand" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Foreground" Value="{StaticResource PrimaryColorBrush}" />
@@ -36,12 +37,12 @@
         </Style.Triggers>
     </Style>
 
-    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type ButtonBase}" x:Key="minimizeWindowStyle">
+    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type Button}" x:Key="minimizeWindowStyle">
         <Setter Property="Content" Value="&#xf2d1;" />
         <Setter Property="FontSize" Value="16" />
     </Style>
-    
-    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type ButtonBase}" x:Key="closeWindowStyle">
+
+    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type Button}" x:Key="closeWindowStyle">
         <Setter Property="Content" Value="&#xf00d;" />
         <Setter Property="FontSize" Value="24" />
     </Style>
@@ -146,6 +147,7 @@
         <Setter Property="Foreground" Value="#ffffff" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="{StaticResource PrimaryColorBrush}" />
@@ -190,7 +192,7 @@
                                 <DropShadowEffect BlurRadius="50" ShadowDepth="10" Direction="-75" RenderingBias="Performance"  Opacity="0.1"/>
                             </Grid.Effect>-->
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="auto"/>
                                 <RowDefinition Height="60"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
@@ -216,8 +218,8 @@
                                             Grid.Column="1"
                                             Margin="0,0,40,0" />
                                 </Grid>
+                                <Separator Grid.ColumnSpan="3" Margin="40,56,40,0" BorderBrush="#CECDCD" BorderThickness="1" />
                             </Grid>
-                            <Separator Margin="40,55,40,0" BorderBrush="#CECDCD" BorderThickness="1"/>
 
                             <!--TitleBar-->
                             <Grid x:Name="PART_HeaderBar" Grid.Row="1" Margin="0,16,0,0" >
@@ -282,12 +284,14 @@
                                     <!--<ToggleButton x:Name="NotificationsButton" Style="{DynamicResource local.WindowTabButtonNotification}"-->
                                      <ToggleButton x:Name="NotificationsButton" Style="{DynamicResource bellWindowStyle}"
                                             Grid.Column="1"
-                                            Margin="0,0,14,0"/>
+                                            Margin="0,0,40,0"/>
 
+                                    <!--
                                     <ToggleButton x:Name="HelpButton" Style="{StaticResource infoWindowStyle}"
                                             Visibility="Collapsed"
                                             Grid.Column="2"
                                             Margin="0,0,40,0"/>
+                                    -->
                                 </Grid>
                             </Grid>
 

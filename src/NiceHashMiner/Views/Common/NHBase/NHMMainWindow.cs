@@ -52,6 +52,7 @@ namespace NiceHashMiner.Views.Common.NHBase
                 if (tabButtom == null) throw new Exception($"Template Missing ToggleButton with name '{name}'. Make sure your Sytle template contains ToggleButton with name '{name}'.");
                 tabButtom.Click += TabButtonButton_Click;
                 tabButtom.IsEnabled = false;
+                //TODO this (HideInitTabButtonVisibility) doesn't do anything since min and close will never go in this loop
                 if (HideInitTabButtonVisibility(name))
                 {
                     tabButtom.Visibility = Visibility.Hidden;
