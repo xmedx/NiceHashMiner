@@ -56,6 +56,8 @@
     <system:String x:Key="Tooltip.IdleMining.IdleCheckMethod">Choose how to check if computer is idle when start mining on idle is enabled. Session Lock will start when the computer is locked (generally when the screen has turned off). Input Timeout will start when there has been no system input for the idle time seconds.</system:String>
     <system:String x:Key="Tooltip.IdleMining.MinIdleSeconds">When StartMiningWhenIdle is checked, MinIdleSeconds tells how many seconds computer has to be idle before mining starts.</system:String>
     <system:String x:Key="Tooltip.DisableVisualCRedistributableCheck">NiceHash Miner will disable Visual Studio C++ Redistributable checking.</system:String>
+
+    <system:String x:Key="textAboutNH">By running the NiceHash Miner or NHM (in short) you are connecting your PC or a mining rig to NiceHash hash-power marketplace. NiceHash Miner enables you to rent out the computing power of your machine and in return, you earn bitcoins. To learn more about how NiceHash works, </system:String>
     
     
 </ResourceDictionary>

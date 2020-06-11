@@ -29,11 +29,14 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Margin="40,17,40,0" >
                 <StackPanel Orientation="Horizontal" >
-                    <ToggleButton x:Name="GeneralButton" Style="{StaticResource TabButton}" Click="Btn_GeneralSettings_Click">
+                    <ToggleButton x:Name="GeneralButton" Style="{StaticResource TabButton}" Click="Btn_Settings_Click">
                         <TextBlock Text="General" />
                     </ToggleButton>
-                    <ToggleButton Margin="24,0,0,0" x:Name="AdvancedButton" Style="{StaticResource TabButton}" Click="Btn_AdvancedSettings_Click">
+                    <ToggleButton Margin="24,0,0,0" x:Name="AdvancedButton" Style="{StaticResource TabButton}" Click="Btn_Settings_Click">
                         <TextBlock Text="Advanced" />
+                    </ToggleButton>
+                    <ToggleButton Margin="24,0,0,0" x:Name="AboutButton" Style="{StaticResource TabButton}" Click="Btn_Settings_Click">
+                        <TextBlock Text="About" />
                     </ToggleButton>
                 </StackPanel>
             </StackPanel>
@@ -47,6 +50,11 @@
                     <TabItem Header="Advanced" Name="AdvancedTab">
                         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" >
                             <local:SettingsAdvanced />
+                        </ScrollViewer>
+                    </TabItem>
+                    <TabItem Header="About" Name="AboutTab">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" >
+                            <local:SettingsAbout />
                         </ScrollViewer>
                     </TabItem>
                 </TabControl>
